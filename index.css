@@ -3,6 +3,28 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    line-height: 1.5;
+    color: #24292e;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .container{
@@ -28,7 +50,7 @@ body {
     /* justify-content: flex-start | flex-end | center | space-between | space-around; */
     justify-content: flex-start;
 
-    width: 1200px;
+    width: 1000px;
 }
 
 /* Header */
@@ -60,8 +82,7 @@ body {
 }
 
 .nav a {
-    color: black;
-    text-decoration-style: none;
+    color: #24292e;
     margin-right: 20px;
 }
 
@@ -75,11 +96,13 @@ body {
 
 .detail {
     flex: 1 1 auto;
+    margin-right: 50px;
 }
 
 .sider{
-    width: 300px;
+    width: 250px;
     padding: 5px;
+    flex: 0 0 auto;
 }
 
 .sider img {
@@ -93,5 +116,44 @@ body {
     /* Webkit 内核的浏览器，必须加上-webkit前缀。 */
     display: -webkit-flex;
     align-items: center;
-    border-top: 1px solid gray;
+    border-top: 1px solid #eaecef;
+}
+
+/* RECENT */
+
+.sider-new-posts li {
+    margin-bottom: 10px;
+}
+
+.sider-category li {
+    margin-bottom: 10px;
+}
+
+/* POST */
+.post-list-item {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #eaecef;
+}
+
+.post-item-title {
+    font-size: 28px;
+}
+
+.post-item-category {
+    font-size: 14px;
+}
+
+.post-item-description {
+    font-size: 16px;
+}
+
+.post-item-readmore {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.post-item-readmore a{
+    align-self: center;
 }
